@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/Logo-Amenti-Rosa.png">
+    <link rel="stylesheet" href="contacto.css">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <!-- AQUÍ VA EL MENÚ -->
+    <div class="contenedor-principal-menu">
+        <div class="barra-nav">
+            <div class="barra-nav-margin-left"></div>
+            <div class="barra-nav-left">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="mujeres.html">MUJERES</a></li>
+                    <li><a href="hombres.html">HOMBRES</a></li>
+                </ul>
+            </div>
+            <div class="barra-nav-center">
+                <img src="imagenes/Logo-Amenti-Rosa.png" alt="Logo">
+            </div>
+            <div class="barra-nav-right">
+                <a onclick="openForm()"><img src="imagenes/Icono-Contactos-Amenti.png" alt="Contacto"></a>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+                        <br>
+                        <label for="email"><b>Email:</b></label>
+                        <input type="text" placeholder="Introduce Email" name="email" required>
+                        <label for="psw"><b>Contraseña:</b></label>
+                        <input type="password" placeholder="Introduce Contraseña" name="psw" required>
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                    </form>
+                </div>
+                <a href="carrito.html"><img src="imagenes/Icono-Carrito-Amenti.png" alt="Carrito"></a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+            <div class="barra-nav-margin-right"></div>
+        </div>
+    </div>
+    <!-- LÍNEAS DE SEPARACIÓN -->
+    <hr width="100%" size="6" noshade="noshade" color="black">
+    <hr width="100%" size="6" noshade="noshade" color="white">
+    <hr width="100%" size="3" noshade="noshade" color="black">
+    <!-- AQUÍ COMIENZA EL CHECKOUT -->
+    <div class="contacto">
+        <div class="titulo">
+            <br>
+            <br>
+            <br>
+            <h1>CONTACTO</h1>
+        </div>
+        <div class="contacto2">
+            <div class="container">
+                <form>
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
+                    <label for="subject">Asunto</label>
+                    <textarea id="subject" name="subject" placeholder="Escribe algo.."
+                        style="height:200px"></textarea>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- AQUÍ VA EL FOOTER -->
+    <div class="footer">
+        <div class="footer-margin-left"></div>
+        <div class="footer-left">
+            <h1>NOSOTROS</h1>
+            <br>
+            <ul>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+            </ul>
+            <br>
+            <br>
+            <h2>Síguenos en: </h2>
+            <img src="imagenes/Icono2.png" alt="">
+            <img src="imagenes/Icono3.png" alt="">
+            <img src="imagenes/Icono4.png" alt="">
+        </div>
+        <div class="footer-center">
+            <h1>ATENCIÓN A CLIENTES</h1>
+            <br>
+            <ul>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+            </ul>
+            <br>
+            <br>
+            <p>@AMENTI 2021 Todos los Derechos Reservados
+                <br> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Términos y Condiciones
+                <br> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Aviso de Privacidad
+            </p>
+        </div>
+        <div class="footer-right">
+            <h1>PAGOS Y ENVÍOS</h1>
+            <br>
+            <ul>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+                <li><a href="">Lorem ipsum dolor sit.</a></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <img src="imagenes/Icono-mail.png" alt="">
+        </div>
+        <div class="footer-margin-right"></div>
+    </div>
+    <!-- AQUÍ VA EL JAVASCRIPT -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
